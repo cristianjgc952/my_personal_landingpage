@@ -103,8 +103,6 @@ a {
     
     transform-style: preserve-3d;
     margin: 0%;
-    width: calc(100%);
-    height: calc(100%);
     background: transparent;
     border: none;
 }
