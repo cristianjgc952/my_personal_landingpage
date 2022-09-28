@@ -1,0 +1,150 @@
+
+.profile_socials {
+
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-top: none;
+    margin-top: none;
+
+}
+.profile_title {
+    height: 70px;
+}
+.links_spacer {
+    padding: 5px;
+}
+.top_section {
+    background-color: rgba(98, 0, 255, 0.08);
+    font-family: 'Courier New', Courier, monospace;
+}
+.user_avatar {
+    align-content: center;
+    height: 170px;
+    width: 170px;
+    margin-top: 0%;
+    padding-top: 0%;
+    margin: auto;
+}
+.wrapper {
+    height: 60px;
+    display: grid;
+    place-items: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding-bottom: 5px;
+  }
+  
+.typing-demo {
+    width: 100%;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 40px;
+}
+.profile-description {
+    font-family: monospace;
+    font-size: 13px;
+    padding: none;
+    margin: none;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+
+.cards-wrapper {
+    display: flex;
+    size-adjust: calc(50%);
+}
+
+.card {
+    width: calc(100%);
+}
+
+.card-title {
+    font-family: monospace;
+}
+
+.centercar {
+    display: flex;
+    align-items: center;
+}
+.carousel-item {
+    text-align: center;
+}
+
+.button-effect:hover {
+    transform: translate(0px, -10px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    height: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    
+    transform-style: preserve-3d;
+    margin: 0%;
+    width: 90px;
+    height: 40px;
+    background: transparent;
+    border: none;
+}
+
+
+a span {
+    position: fixed;
+    right: 0%;
+    top: -5%;
+    width: 100%;
+    height: 100%;
+    background: #4a3bd113;
+    color: rgb(5, 5, 5);
+    font-size: 100%;
+    transition: 1.1s ease-out;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    padding-top: calc(8%);
+}
+
+a:hover span {
+    transition: .5s;
+    color: rgb(0, 120, 38);
+}
+
+a :hover:nth-child(2) {
+    transform: translate(0px, -10px);
+}
+
+a:hover span:nth-child(1) {
+transform: translate(0px, 0px);
+opacity: .2;
+}
+
+a:nth-child(1):hover span {
+background: #72f25888;
+}
+
+.carousel {
+    width: calc(80%);
+    align-items: center;
+    margin: auto;
+}
