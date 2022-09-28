@@ -64,6 +64,12 @@
     }
 }
 
+
+
+/* This are the cards and caroussel general styles */
+
+
+
 .cards-wrapper {
     display: flex;
     size-adjust: calc(50%);
@@ -99,52 +105,49 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-a {
-    
-    transform-style: preserve-3d;
-    margin: 0%;
-    width: 90px;
-    height: 40px;
-    background: transparent;
-    border: none;
-}
-
-
-a span {
-    position: fixed;
-    right: 0%;
-    top: -5%;
-    width: 100%;
-    height: 100%;
-    background: #4a3bd113;
-    color: rgb(5, 5, 5);
-    font-size: 100%;
-    transition: 1.1s ease-out;
-    border-radius: 10px 10px 10px 10px;
-    text-align: center;
-    padding-top: calc(8%);
-}
-
-a:hover span {
-    transition: .5s;
-    color: rgb(0, 120, 38);
-}
-
-a :hover:nth-child(2) {
-    transform: translate(0px, -10px);
-}
-
-a:hover span:nth-child(1) {
-transform: translate(0px, 0px);
-opacity: .2;
-}
-
-a:nth-child(1):hover span {
-background: #72f25888;
-}
-
 .carousel {
     width: calc(80%);
     align-items: center;
     margin: auto;
+}
+
+
+
+/* This are the style for the cards animation */
+
+
+.card-animation {  
+    transform-style: preserve-3d;
+    margin: 0%;
+
+}
+
+
+.card-animation span {
+    position: fixed;
+    transition: 1.1s ease-out;
+
+}
+
+.card-animation:hover span {
+    transition: .5s;
+    color: rgb(0, 120, 38);
+}
+
+.card-animation :hover:nth-child(2) {
+    transform: translate(0px, -10px);
+}
+
+.card-animation:hover span:nth-child(1) {
+transform: translate(0px, 0px);
+opacity: .2;
+}
+
+.card-animation:nth-child(1):hover span {
+background: #72f25888;
+}
+
+button {
+    background-color: rgba(252, 250, 255, 0.247);
+    border: none;
 }
